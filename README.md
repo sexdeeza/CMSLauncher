@@ -1,5 +1,5 @@
 # CMSLauncher
-CN MapleStory v79-v104 Launcher
+CN MapleStory v79-v125 Launcher
 
 ## Feature
 - Fix domain: Using IPv6 as local DNS may increase startup time
@@ -14,22 +14,22 @@ CN MapleStory v79-v104 Launcher
 - Remove CRC: Prevent client crashes after 60 seconds or upon entering field
 
 ## Test version
-The supported version range is v79-v104  
+The supported version range is v79-v125 
 Please tell me if you find any errors during login to these versions
 ### Anti-Cheat
-- Versions in which HS were removed: v79-v104
+- Versions in which HS were removed: v79-v125
 ### CRC
+- Versions in which CWvsApp::Run CRC were removed: v79-v125
 - Versions in which CClientSocket::ManipulatePacket CRC were removed: v79-v104
-- Versions in which CWvsApp::Run CRC were removed: v79-v104
 - Versions in which CWvsContext::OnEnterField CRC were removed: v86-v95
 ### IMG
-1. Supported version range is v79-v104
+1. Supported version range is v79-v125
 2. Using `HaRepacker` to convert all wz files except `List.wz` to `Data` folder
 3. Put `MoveImg.bat` into `Data` folder
 4. Run the bat will quickly format folder name
 5. Remove `Base.wz` file from the client root directory to another location
 ### MultipleWZ
-1. Supported version range is v79-v104
+1. Supported version range is v79-v109
 2. Using `HaRepacker` to open list.wz
 3. Separate other WZ files based on the order defined in List.wz
 4. The wz file name format is as follows `Character.wz` `Character2.wz` ... `Character99.wz`
@@ -44,7 +44,7 @@ Please tell me if you find any errors during login to these versions
 2. Set `REMOTE_DIR` to MapleStory directory
 3. Set options in `Config.h`
 4. Set `IS_DEBUG_MODE` true in `pch.h`
-5. Build solution with `Release x86` mode
+5. Build solution with `Debug x86` mode
 6. Run it in Visual Studio will inject hook by remote
 7. Recommend using [DebugView](https://learn.microsoft.com/en-us/sysinternals/downloads/debugview) to see debug log
 

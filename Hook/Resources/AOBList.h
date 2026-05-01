@@ -6,23 +6,24 @@
 const std::array<std::wstring, 2> AOB_Scan_CPatchException__CPatchException_Addrs = {
 	// CMS79(005291C4)->CMS85(00563123)
 	L"66 C7 07 ?? 00 66 89 46 06 FF",
-	// CMS86(0051FB39)->CMS88(0052B0D9)->CMS96(0054FB99)->CMS100(00571A09)->CMS104(0058BC58)
+	// CMS86(0051FB39)->CMS88(0052B0D9)->CMS96(0054FB99)->CMS100(00571A09)->CMS104(0058BC58)->CMS110(005CB56D)->CMS125(0070554D)
 	L"BA ?? 00 00 00 66 89 17 66 89 46 06",
 };
 #pragma endregion
 
 #pragma region ResMan
-const std::array<std::wstring, 2> AOB_Scan_IWzResMan__GetObjectA_Addrs = {
+const std::array<std::wstring, 3> AOB_Scan_IWzResMan__GetObjectA_Addrs = {
 	// CMS79(00404A75)->CMS85(00403AE9)
 	L"B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? 83 EC 14 83 ?? ?? 00 53 56 57 8B D9",
-	// CMS86(00404AD0)->CMS88(00404A00)->CMS104(00404E70)
-	L"6A FF 68 ?? ?? ?? 00 64 A1 00 00 00 00 50 83 EC 14 53 55 56 A1 ?? ?? ?? ?? 33 C4",
+	// CMS86(00404AD0)->CMS88(00404A00)->CMS104(00404E70)->CMS110(00405030)->CMS125(00466AC0)
+	L"6A FF 68 ?? ?? ?? ?? 64 A1 00 00 00 00 50 83 EC 14 53 55 56 A1 ?? ?? ?? ?? 33 C4",
 };
-const std::array<std::wstring, 2> AOB_Scan_IWzProperty__GetItem_Addrs = {
+const std::array<std::wstring, 3> AOB_Scan_IWzProperty__GetItem_Addrs = {
 	// CMS79(00403AC7)->CMS85(00403881)
 	L"B8 ?? ?? ?? 00 E8 ?? ?? ?? 00 83 EC 14 83 65 F0 00 56 57 8B F1",
-	// CMS86(00404960)->CMS88(00404890)->CMS104(00404D00)
-	L"6A FF 68 ?? ?? ?? 00 64 A1 00 00 00 00 50 83 EC 14 56 A1",
+	// CMS86(00404960)->CMS88(00404890)->CMS104(00404D00)->CMS110(00404E10)->CMS125(004C8FB0)
+	L"6A FF 68 ?? ?? ?? ?? 64 A1 00 00 00 00 50 83 EC 14 56 A1 ?? ?? ?? ?? 33 C4 50 8D 44 24 1C",
+	
 };
 #pragma endregion
 

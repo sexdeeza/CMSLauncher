@@ -40,8 +40,8 @@ namespace ResMan {
 		if (uGetItemAddress == 0) {
 			return false;
 		}
-		SADDR(&_IWzResMan__GetObjectA, uGetObjectAddress); // CMS88(00404A00)
-		SADDR(&_IWzProperty__GetItem, uGetItemAddress); // CMS88(00404890)
+		SADDR(&_IWzResMan__GetObjectA, uGetObjectAddress);
+		SADDR(&_IWzProperty__GetItem, uGetItemAddress);
 		return true;
 	}
 

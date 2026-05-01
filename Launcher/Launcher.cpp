@@ -3,7 +3,7 @@
 #pragma comment(lib, "Shlwapi.lib")
 
 #define IS_DEV false
-#define GAME_DIR L"H:\\Maple\\MapleClient\\CMS88"
+#define GAME_DIR L"H:\\Maple\\MapleClient\\CMS79"
 #define GAME_NAME L"MapleStory.exe"
 #define DLL_NAME L"Hook.dll"
 #define OFFICIAL_ADDR L" 221.231.130.70 8484" 
